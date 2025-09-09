@@ -1,0 +1,85 @@
+.footer{
+    width: 100%;
+    height: 821px;
+    background: #212A2F;
+    &__block{
+        width: 100%;
+        @include dfc;
+        padding: 72px 54px;
+        gap: 72px;
+    }
+    &__top{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        color: $light;
+        align-items: start;
+
+    }
+    &__collection{
+        width: 25%;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 21px;
+        @include dfc;
+        align-items: start;
+        gap: 16px;
+        li{
+            color: $light;
+        }
+    }
+    &__item{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 12px;
+        color: $light;
+    }
+    &__body{
+        width: 100%;
+        @include df;
+        justify-content: space-between;
+        margin-bottom: 18px;
+    }
+    &__body__left{
+        width: 25%;
+        height: 132px;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+    &__title{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 2px;
+        color: $light;
+    }
+    &__text{
+        width: 90%;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: $light;
+        line-height: 18px;
+    }
+    &__body__right{
+        width: 50%;
+        height: 132px;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        padding-right: 142px;
+        gap: 24px;
+    }
+    &__comment{
+        width: 100%;
+        @include df;
+        color: $light;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+    }
+}

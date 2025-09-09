@@ -1,0 +1,18 @@
+@import "variable";
+@import "mixin";
+@import "reset";
+
+
+@import "../components/header/header";
+@import "../components/hero/hero";
+@import "../components/favorites/favorites";
+@import "../components/seansons/seasons.scss";
+@import "../components/collections/collections";
+@import "../components/nature/nature";
+@import "../components/arrivals/arrivals";
+@import "../components/business/business";
+@import "../components/storie/stories";
+@import "../components/dibs/dibs";
+@import "../components/footer/footer";
+@import "../components/button/button";
+@import "../components/cards/cards";

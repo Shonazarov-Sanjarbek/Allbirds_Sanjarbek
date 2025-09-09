@@ -1,0 +1,60 @@
+.stories {
+    width: 100%;
+    height: 724px;
+    padding: 60px 0;
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        margin-left: 102px;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__content {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: stretch;
+        position: relative; // tugmalar shu blok ichida joylashadi
+
+        .card {
+            flex: 0 0 300px;
+            max-width: 300px;
+        }
+    }
+
+    &__btn {
+        background: $textcolor;
+        border: none;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 12px 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background 0.3s;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        &--left {
+            left: 0; // chap card yoniga yopishadi
+            transform: translate(150%, -50%); // tashqariga chiqib turadi
+        }
+
+        &--right {
+            right: 0; // o‘ng card yoniga yopishadi
+            transform: translate(-150%, -50%); // tashqariga chiqib turadi
+        }
+    }
+}

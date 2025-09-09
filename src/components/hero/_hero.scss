@@ -1,0 +1,41 @@
+.hero {
+    width: 100%;
+    height: 740px;
+    background: url("../../assets/hero.png") no-repeat center center;
+    display: flex;
+    background-size: cover;
+    align-items: end;
+    justify-content: start;
+    padding-left: 54px;
+    padding-bottom: 66px;
+    margin-bottom: 120px;
+
+    &__block {
+        width: 670px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    &__subtitle {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 63px;
+        color: $light;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $light;
+        margin-bottom: 13px;
+    }
+
+    &__btn {
+        @include df;
+        justify-content: start;
+        gap: 24px;
+    }
+}

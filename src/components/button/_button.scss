@@ -1,0 +1,19 @@
+.btn{
+    width: 100%;
+    height: 48px;
+    @include df;
+    border: none;
+    cursor: pointer;
+    p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &--primary{
+        background: $light;
+        color: $textcolor;
+    }
+    &--secondary{
+        background: $textcolor;
+        color: $light;
+    }
+}

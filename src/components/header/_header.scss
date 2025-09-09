@@ -1,0 +1,93 @@
+.navbar {
+    width: 100%;
+    padding: 0 30px;
+    @include df;
+    justify-content: space-between;
+
+    &__list {
+        width: 30%;
+        @include df;
+        justify-content: start;
+        gap: 36px;
+    }
+
+    &__item {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $textcolor;
+    }
+
+    &__logo {
+        width: 30%;
+        @include df;
+
+        img {
+            width: 120px;
+            height: 38px;
+        }
+    }
+
+    &__icons {
+        width: 30%;
+        @include df;
+        justify-content: right;
+        gap: 20px;
+    }
+
+    &__icons__text {
+        @include df;
+        gap: 40px;
+
+        p {
+            font-size: 12px;
+            line-height: 21px;
+            font-weight: 400;
+            color: $textcolor;
+        }
+    }
+
+    &__icons__icon {
+        @include df;
+        gap: 20px;
+    }
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+        div {
+            width: 25px;
+            height: 2.5px;
+            background: #000;
+            transition: 0.3s;
+            margin: 3px 0;
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar__item {
+        // background: $light;
+        color: $light;
+    }
+
+    .navbar__list.show {
+        display: flex;
+    }
+
+    .navbar__icons {
+        display: none;
+        /* kichik ekranda text yashirilsin */
+    }
+
+    .navbar__burger {
+        display: flex;
+    }
+
+}
+
+/* Burger animatsiyasi */

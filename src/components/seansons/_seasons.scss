@@ -1,0 +1,33 @@
+.seasons{
+    width: 100%;
+    height: 912px;
+    @include dfc;
+    gap: 48px;
+    &__img{
+        width: 100%;
+        height: 542px;
+    }
+    &__block{
+        width: 100%;
+        @include dfc;
+        gap: 30px;
+    }
+    &__subtitle{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        color: $textcolor;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $textcolor;
+    }
+    &__btn{
+        width: 50%;
+        @include df;
+        gap: 24px;
+    }
+}

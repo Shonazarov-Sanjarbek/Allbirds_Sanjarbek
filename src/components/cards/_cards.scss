@@ -1,0 +1,54 @@
+.card {
+    width: calc(33% - 16px);
+    @include dfc;
+    min-height: 513px;
+    height: auto;
+
+    &__img {
+        width: 100%;
+        min-height: 386px;
+        @include dfc;
+        gap: 12px;
+        margin-bottom: 18px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__button {
+        @include dfc;
+        gap: 12px;
+    }
+
+    &__btn {
+        width: 276px;
+    }
+
+    &__desc {
+        width: 80%;
+        @include dfc;
+        align-items: start;
+
+        h1 {
+            width: 100%;
+            font-size: 22px;
+            font-weight: 700;
+            color: $textcolor;
+            border-bottom: 1px solid #D3D4D5;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: $textcolor;
+        }
+    }
+
+    &--none {
+        display: none;
+    }
+
+    &--block {
+        display: flex;
+    }
+}
